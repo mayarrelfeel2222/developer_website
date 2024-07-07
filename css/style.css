@@ -1,0 +1,705 @@
+*{
+    
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        text-decoration: none !important;
+        list-style: none !important;
+        outline: none !important;
+        font-family: 'Montserrat', sans-serif;
+        
+}
+/* navbar */
+nav .logo{
+    
+   
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+
+nav .nav-item {
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+
+#navbar .active{
+    color: white;
+
+}
+#navbar .nav-item .nav-link{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+#navbar .nav-item .nav-link::after{
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    bottom: 4px;
+    left: -100%;
+    background-color: black;
+  
+}
+#navbar .nav-item .nav-link.active::after{
+    left: 9%;
+}
+
+
+/* end navbar */
+/* home */
+#home{
+    background-image: url('../images/bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#home .home-over{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+}
+#home .home-over .home-caption{
+    color: aliceblue;
+    font-size: 6rem;
+    font-weight: bold ;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+#home .home-over .contact-icon{
+    font-size: 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.4);
+}
+#home .home-caption h2 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
+/* end home*/
+/* about*/
+/* //////////////////////////////////////////////////////////// */
+#about .about-left{
+    position: relative;
+}
+#about .about-left::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+#about .about-right p{
+    font-weight: 500;
+}
+#about .progress{
+    border-radius: 4px;
+    background-color: #F7F7F7;
+    box-shadow: inset 0 0 5px 0 #8080806b !important;
+    height: 25px;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+#about .progress-bar{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px white;
+}
+#about .progress-bar.first-one{
+    animation: FirstProgress 1s; 
+    width: 95%;  
+}
+#about .progress-bar.second-one{
+    animation: SecondProgress 1s;
+    width: 80%;   
+}
+#about .progress-bar.third-one{
+    animation: ThirdProgress 1s; 
+    width: 90%;  
+}
+#about .btn{
+    background-color: black;
+    color: white;
+}
+#about .btn:hover{
+    color: black;
+    background-color: white;
+
+}
+#about .another{
+    background-color: white;
+    color: black;
+}
+#about .another:hover{
+    background-color: black;
+    color: white;
+}
+
+#about p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+
+@keyframes FirstProgress {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:95%;
+    }
+}
+@keyframes SecondProgress {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:80%;
+    }
+}
+@keyframes ThirdProgress {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+
+/* Services */ 
+#Services{
+    background-color: #f5f5f5;
+}
+
+.service-head{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #343434;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block ;
+    z-index: 4;
+    position: relative;
+}
+
+.service-head::after{
+    content: "";
+    width: 100%;
+    height: 27%;
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.service-content{
+    color:#748182;
+    font-family: "system-ui", "-apple-system", "Segoe UI";
+    font-size: 10px;
+}
+.service-content p{
+    font-size: 15px;
+    color: #748182;
+}
+.service-content h2{
+    font-size: 18px;
+    
+}
+
+.service-box{
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+#Services .circle-border{
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F4F4F4;
+   
+}
+#Services .circle-border i{
+    color: #343434;
+
+}
+.service-box:hover .circle-border{
+ 
+    background-color:#343434 !important;
+}
+
+.service-box:hover i{
+    color: #F4F4F4 !important;
+}
+
+.service-box-title{
+    color: #1E1E1E;
+   
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.service-box-description{
+    color: #4E4E4E;
+}
+/* end services*/
+
+
+/*portfolio*/
+#portofolio .portofolio-head{
+    display: inline-block ;
+    z-index: 4;
+    position: relative;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #343434;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#portofolio .portofolio-head::after{
+    content: "";
+    width: 100%;
+    height: 27%;
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+#portofolio .portofolio-body .nav-link{
+    padding: 10px;
+    color: black;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#portofolio .portofolio-body .nav-item .nav-link::after{
+    transition: all ease-in-out 0.5s;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: 5px;
+    left:10%;
+    background-color: black;
+}
+
+#portofolio .portofolio-body .nav-item .nav-link.active::after{
+    width: 80%;
+}
+
+#portofolio .portofolio-image{
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#portofolio .portofolio-image img{
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+
+
+#portofolio .portofolio-layer{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.93);
+    width: 96%;
+    height: 96%;  
+    left: 2%;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.2s;
+    -webkit-transition: all ease-in-out 0.2s;
+    -moz-transition: all ease-in-out 0.2s;
+    -ms-transition: all ease-in-out 0.2s;
+    -o-transition: all ease-in-out 0.2s;
+}
+#portofolio .portofolio-image:hover .portofolio-layer{
+    opacity: 1;
+    bottom: 2%;
+}
+#portofolio .portofolio-layer .layer-context2 h6{
+    transform: translateY(-10px);
+    transition: all ease-in-out 0.4s;
+}
+#portofolio .portofolio-image:hover .portofolio-layer .layer-context2 h6{
+    transform: translateY(0);
+}
+#portofolio .portofolio-layer .layer-context2 .photo-icons{
+    transform: translateY(10px);
+    transition: all ease-in-out 0.4s;
+}
+#portofolio .portofolio-image:hover .portofolio-layer .layer-context2 .photo-icons{
+    transform: translateY(0);
+}
+#portofolio .portofolio-layer .layer-context2{
+    text-align: center;
+    
+    font-family: 300;
+}
+#portofolio .portofolio-body .icon_layer{
+    border: 1px solid black;
+    width: 35px;
+    height: 35px;
+}
+#portofolio .portofolio-body .icon_layer:hover{
+    background-color: white !important;
+}
+#portofolio .portofolio-body .icon_layer:hover a{
+    color: #000 !important;
+}
+
+/* testimonial*/
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+#testimonial .testimonials-head{
+    display: inline-block ;
+    z-index: 4;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#testimonial .testimonials-head::after{
+    content: "";
+    width: 100%;
+    height: 27%;
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.testimonial{
+   background-color:  #F7F7F7;
+}
+.carousel-item{
+    width: 100%;
+    padding: 0 20%;
+}
+
+.carousel-item img{
+    width: 80px;
+    height: 80px;
+}
+.testimonials-head{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #343434;
+    font-family: "system-ui", "-apple-system", "Segoe UI";
+}
+.testimonial .carousel-item .slide-content h6{
+    color: #343434;
+}
+.testimonial .carousel-item .slide-content p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.testimonial .carousel-item .slide-content span{
+    color: #748182;
+    font-size: 13px;
+}
+.carousel-indicators  [data-bs-target]{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: gray;
+}
+.carousel-indicators  [data-bs-target]:hover{
+    background-color: #3e403f;
+}
+
+
+/*end testimonial*/
+/* counter */
+#Counter{
+    background-color: white;
+    padding: 8rem 0;
+}
+
+
+.counter-box{
+    color: #fff;
+    text-align: center;
+}
+
+#Counter .counter-icon i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    font-size: 2rem;
+    text-align: center;
+    
+    color: #343434;
+}
+
+.counter-number p{
+    color: #343434;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    
+    font-size: xx-large;
+}
+
+.counter-number .counter-text{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #6b7171;
+}
+/* end counter*/
+/*team*/
+#team .team-box .card-body{
+    color: white;
+    background-color: #5B5B5B;
+}
+#team{
+    background-color: #f5f5f5;
+}
+
+#team .team-head{
+    display: inline-block ;
+    z-index: 4;
+    position: relative;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #343434;;
+    font-family: 'Montserrat', sans-serif;}
+
+#team .team-head::after{
+    content: "";
+    width: 100%;
+    height: 27%;
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+#team .team_image img{
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+#team .team_image:hover img{
+    transform: scale(1.1);
+}
+#team .team_image{
+    overflow: hidden;
+    position: relative;
+}
+#team .team_image .team_image_overlay{
+    position: absolute;
+    transform: rotateY(180deg) scale(0.5);
+    top:2%;
+    left: 2%;
+    width: 96%;
+    height: 96%;
+    background-color: rgba(255, 255, 255, 0.93);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.5s;
+}
+#team .card:hover .team_image .team_image_overlay{
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+}
+#team .card .team_image .team_image_overlay .team_image_icons{
+    width: 70%;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-evenly;
+}
+#team .card .team_image .team_image_overlay .team_image_icons .team_icon{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+}
+#team .card .team_image .team_image_overlay .team_image_icons .team_icon:hover{
+    background-color: white;
+    color: black;
+}
+#team .card-img-top{
+    border-radius: 0 !important;
+    border: none !important;
+}
+#team .card{
+    border-radius: 0 !important;
+    border: none !important;
+}
+#team .card-body{
+    border-radius: 0 0 10px 10px;
+}
+/* contact*/ 
+
+#contact .contact-head{
+    display: inline-block ;
+    z-index: 4;
+    position: relative;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #343434;
+    font-family: 'Montserrat', sans-serif;}
+
+#contact .contact-head::after{
+    content: "";
+    width: 80%;
+    height: 27%;
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+#conatct .contact_input{
+    background-color: #F4F4F4;
+}
+#contact .btn{
+    background-color: black;
+    color: white;
+}
+#contact .btn:hover{
+    color: black;
+    background-color: white;
+
+}
+#contact .circle-border{
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F4F4F4;
+   
+}
+#contact .circle-border i{
+    color: #343434;
+
+}
+.contact_info:hover .circle-border{
+    background-color:#343434 !important;
+}
+.contact_info:hover .circle-border i{
+    color:white !important;
+}
+#contact .form-control{
+    border: none;
+    background-color: #f4f4f4;
+    box-shadow: none;
+}
+#contact .contact_info p{
+    color: #748182;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    
+    font-size: medium;
+
+}
+
+#contact .form-control::placeholder{
+    font-weight:400;
+    color: #748182;
+}
+/* footer */
+.footer-copy{
+    background-color: #1C1C1C;
+    padding: 30px;
+}
+.footer-copy p{
+    width: 23%;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    font-size: 13px;
+    word-spacing: 2px;
+
+}
+
+
+
+
+
+
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1140px;
+    }
+  }
